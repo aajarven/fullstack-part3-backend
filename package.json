@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/aajarven/fullstack-part3-backend/issues"
   },
-  "homepage": "https://github.com/aajarven/fullstack-part3-backend#readme"
+  "homepage": "https://github.com/aajarven/fullstack-part3-backend#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
