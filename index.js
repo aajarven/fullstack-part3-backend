@@ -1,7 +1,16 @@
 const express = require('express')
 const app = express()
 
+const requestLogger = (request, response, next) => {
+  console.log('method: ', request.method)
+  console.log('path: ', request.path)
+  console.log('body: ', request.body)
+  console.log('---')
+  next()
+}
+
 app.use(express.json())
+app.use(requestLogger)
 
 let notes = [
   {
