@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf build && cd ../fullstack/03-backend-connection && npm run build && cp -r build ../../fullstack-part3-backend",
+    "deploy": "git push heroku main",
+    "logs:prod": "heroku logs -t"
   },
   "repository": {
     "type": "git",
